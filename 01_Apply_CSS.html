@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Apply CSS</title>
+
+    <!--//////////////Internal CSS //////////////-->
+    <style>
+        p{
+            color: green;
+        }
+    </style>
+
+    <!--//////////////External CSS Plugin//////////////-->
+
+    <!--one way-->
+    <link rel="stylesheet" href="/assets/stylesheet/style.css">
+
+    <!--another way-->
+    <style>
+        @import "/assets/stylesheet/style.css";
+    </style>
+
+
 </head>
 <body>
+
+<!--//////////////In line CSS //////////////-->
+
+<h1 style="color:red;">Inline CSS</h1>
+
+<!--//////////////Internal CSS //////////////-->
+
+<p>This is Internal CSS Test Paragraph</p>
+
+<!--//////////////External CSS //////////////-->
+
+<h2>External CSS</h2>
+
 
 </body>
 </html>
