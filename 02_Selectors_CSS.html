@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors CSS</title>
+
+    <style>
+
+        /*--------------- 1) Type Selector---------------*/
+        /*h1 {
+            color: red;
+            font-size: 24px;
+        }*/
+
+        /*--------------- 2) Class Selector---------------*/
+        /*.mystyle {
+            color: blue;
+            background-color: pink;
+        }*/
+
+        /*--------------- 3) ID Selector---------------*/
+        /*#idSelector {
+            color: green;
+        }*/
+
+        /*--------------- 4) Universal Selector---------------*/
+        /** {
+            color: red;
+        }*/
+
+        /*--------------- 5) Attribute Selector---------------*/
+        /* 🎯 Attribute Selector only with attribute */
+        /*[name] {
+             color: cornflowerblue;
+         }
+
+        [href] {
+            background-color: deeppink;
+        }*/
+
+        /* 🎯 Attribute Selector with attribute with value ( = ) */
+        /*[name = "withValue"] {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*[href = "http://google.com"] {*/
+        /*    background-color: mediumpurple;*/
+        /*}*/
+
+        /* 🎯 Attribute Selector with starting value ( ^= ) */
+        /*[href ^= "http"] {*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+        /* 🎯 Attribute Selector with ending value ( $= )*/
+        /*[href $= ".lk"] {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+        /* 🎯 Attribute Selector with given value snippet ( *= ) */
+        /*[href *= "https"] {*/
+        /*    background-color: lightseagreen;*/
+        /*}*/
+
+        /*[href *= "students"] {*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /* 🎯 Attribute Selector with given word ( ~= ) */
+        /*[href ~= "students"] {*/
+        /*    background-color: red;*/
+        /*}*/
+
+
+
+        /* 🎯 Attribute Selector with Type Selector */
+        /*h3[name = "google"] {*/
+        /*   background-color: yellow;*/
+        /*}*/
+
+
+
+        /* 🎯 Attribute Selector with Class Selector */
+        /*.mystyle[name] {*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*--------------- 6) Pseudo-Class Selectors (:)---------------
+        Pseudo-Class Selectors (:) -> Add style to state (status, location, etc) of an element */
+
+
+
+
+
+
+
+
+
+
+
+        /*--------------- 7) Pseudo-Element Selectors (::)---------------
+        Pseudo-Element Selectors (::) -> Add style to specific part of an element */
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<!--///////////// 1) Type Selector ///////////////////-->
+
+<h1>This is Type Selector</h1>
+
+<!--///////////// 2) Class Selector ///////////////////-->
+
+<p class="mystyle">This is Class Selector</p>
+
+<!--///////////// 3) ID Selector ///////////////////-->
+
+<h3 id="idSelector">This is ID Selector</h3>
+
+<!--///////////// 4) Universal Selector ///////////////////-->
+
+<p>Universal Selector is select all element in a web page</p>
+
+<!--///////////// 5) Attribute Selector ///////////////////-->
+
+        <!-- 🎯 Attribute Selector only with attribute -->
+
+        <h3 name="nameAttribute">Attribute Selector only with attribute</h3>
+
+        <a href="http://google.com">Google</a>
+
+        <!-- 🎯 Attribute Selector with attribute with value ( = ) -->
+
+        <h3 name="withValue">Attribute Selector with attribute with value ( = )</h3>
+
+        <a href="http://google.com">Google</a> <br>
+
+        <!-- 🎯 Attribute Selector with starting value ( ^= ) -->
+
+        <a href="http://google.com">Google</a> <br> <br>
+
+        <!--🎯 Attribute Selector with ending value ( $= ) -->
+
+        <a href="http://google.com" name="google">Google</a>
+        <a href="https://ibm.com" name="css">IBM</a>
+        <a href="https://ijse.lk">IJSE</a>
+        <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
+        <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
+
+        <!-- 🎯 Attribute Selector with given value snippet ( *= ) -->
+        <a href="http://google.com" name="google">Google</a>
+        <a href="https://ibm.com" name="css">IBM</a>
+        <a href="https://ijse.lk">IJSE</a>
+        <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
+        <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
+
+        <!-- 🎯 Attribute Selector with given word ( ~= ) -->
+        <a href="http://google.com" name="google">Google</a>
+        <a href="https://ibm.com" name="css">IBM</a>
+        <a href="https://ijse.lk">IJSE</a>
+        <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
+        <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
+
+        <!-- 🎯 Attribute Selector with Type Selector -->
+        <h3 name="google">Google Header</h3>
+
+        <!-- 🎯 Attribute Selector with Class Selector -->
+        <h3 class="mystyle" name="withClass">Attribute Selector with Class Selector</h3>
+
+<!--///////////// 6) Pseudo-Class Selector ///////////////////-->
+
+
+</body>
+</html>
