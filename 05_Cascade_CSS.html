@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade CSS</title>
+
+    <style>
+
+        /*ID Identifier (0,1,0,0) */
+        #btnid { /*(0, 1, 0, 0) ✅ */
+            color: mediumpurple;
+        }
+
+        /*Class Identifier (0,0,1,0) */
+        /*.btn { !*(0, 0, 1, 0)*!*/
+        /*    color: green;*/
+        /*}*/
+
+        /*Element Identifier (0,0,0,1) */
+        /*button { !*(0, 0, 0, 1)*!*/
+        /*    color: red;*/
+        /*}*/
+
+        /*button { !*(0, 0, 0, 1)*!*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*----------------------------------*/
+        /*Multiple Element Identifier (0,0,0,1*elements) */
+        /*ul>li { !*(0, 0, 0, 2)*!*/
+        /*    color: green;*/
+        /*}*/
+
+        /*ol>li>ul>li { !*(0, 0, 0, 4)*!*/
+        /*    color: orange;*/
+        /*}*/
+
+        /*ul>li:last-child { !*(0, 0, 1, 2) ✅ *!*/
+        /*    color: red;*/
+        /*}*/
+
+    </style>
+
+</head>
+<body>
+
+<button id="btnid" class="btn" type="button">Click Me!</button>
+
+<ol>
+    <li>
+        Java
+        <ul>
+            <!-- Inline CSS -->
+            <li style="color: yellow;">Basics</li> <!-- (1, 0, 0, 0) -->
+            <li>Advanced</li>
+        </ul>
+    </li>
+    <li>js</li>
+    <li>Go Lang</li>
+</ol>
+
+</body>
+</html>
