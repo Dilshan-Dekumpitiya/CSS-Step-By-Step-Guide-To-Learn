@@ -72,12 +72,10 @@
         /*}*/
 
 
-
         /* 🎯 Attribute Selector with Type Selector */
         /*h3[name = "google"] {*/
         /*   background-color: yellow;*/
         /*}*/
-
 
 
         /* 🎯 Attribute Selector with Class Selector */
@@ -88,22 +86,116 @@
         /*--------------- 6) Pseudo-Class Selectors (:)---------------
         Pseudo-Class Selectors (:) -> Add style to state (status, location, etc) of an element */
 
+        /* -- 🔴 select specific status of an element*/
+
+        /* :hover */
+        /*h1:hover {*/
+        /*        color: red;*/
+        /*        cursor: pointer;*/
+        /*}*/
+
+        /* :active - Apply style when click on the element */
+        /*h1:active {*/
+        /*    color: deepskyblue;*/
+        /*}*/
+
+        /* :visited - apply styles to already visited links */
+        /*a:visited {*/
+        /*    color: red;*/
+        /*}*/
+
+        /* :link - apply styles to non-visited links */
+        /*a:link {*/
+        /*    color: lightgreen;*/
+        /*}*/
 
 
+        /* :focus - apply styles when focus to the element */
+        /*input:focus {*/
+        /*    background-color: green;*/
+        /*}*/
 
+        /* -- 🔴 select specific element according to the tree-structure (element location)*/
 
+        /* :first-child - Apply styles to first-child of parent */
+        /*li:first-child {*/
+        /*    font-weight: bold;*/
+        /*}*/
 
+        /*!* :last-child - Select the last element *!*/
+        /*li:last-child {*/
+        /*    color: deepskyblue;*/
+        /*}*/
 
+        /*!* :nth-child(n) - Select any element *!*/
+        /*li:nth-child(3) {*/
+        /*    color: red;*/
+        /*}*/
 
+        /*!* :nth-last-child(n) - Select the element from bottom of the list *!*/
+        /*li:nth-last-child(2) {*/
+        /*    color: deeppink;*/
+        /*}*/
 
-
+        /*!* :only-child - If list has only one child then select it *!*/
+        /*li:only-child {*/
+        /*    color: gold;*/
+        /*}*/
 
         /*--------------- 7) Pseudo-Element Selectors (::)---------------
         Pseudo-Element Selectors (::) -> Add style to specific part of an element */
 
+        /* ::before - add a content before the current content and style it */
+        /*h1::before {*/
+        /*        content: "🥳";*/
+        /*}*/
 
+        /* ::after - add a content after the current content and style it */
+        /*h1::after {*/
+        /*        content: "🎯";*/
+        /*}*/
 
+        /* ::first-letter - add style to first letter */
+        /*h3::first-letter {*/
+        /*    color: yellow;*/
+        /*}*/
 
+        /* ::first-line - add style to first line */
+        /*p::first-line {*/
+        /*    color: deeppink;*/
+        /*}*/
+
+        /* ::placeholder - style placeholder */
+        /*input::placeholder {*/
+        /*    color: red;*/
+        /*    font-weight: bold;*/
+        /*}*/
+
+        /* ::file-selector-button - add style to file selector btn */
+        /*input::file-selector-button {*/
+        /*    background-color: orange;*/
+        /*}*/
+
+        /* Pseudo-Element Selectors + Pseudo-Class Selectors */
+        /*input::file-selector-button:hover {*/
+        /*    background-color: green;*/
+        /*}*/
+
+        /* ::selection - style web content selection (highlight and select) */
+        /*::selection {*/
+        /*    background-color: yellow;*/
+        /*    color: white;*/
+        /*}*/
+
+        /* ::marker - style markers in html lists (work with lists) */
+        /*::marker {*/
+        /*    content: "💡";*/
+        /*}*/
+
+        /*-- Grouping Selector --*/
+        h1,#subtopic1, .mystyle {
+            color: lightcoral;
+        }
 
 
     </style>
@@ -129,51 +221,136 @@
 
 <!--///////////// 5) Attribute Selector ///////////////////-->
 
-        <!-- 🎯 Attribute Selector only with attribute -->
+    <!-- 🎯 Attribute Selector only with attribute -->
 
-        <h3 name="nameAttribute">Attribute Selector only with attribute</h3>
+    <h3 name="nameAttribute">Attribute Selector only with attribute</h3>
 
-        <a href="http://google.com">Google</a>
+    <a href="http://google.com">Google</a>
 
-        <!-- 🎯 Attribute Selector with attribute with value ( = ) -->
+    <!-- 🎯 Attribute Selector with attribute with value ( = ) -->
 
-        <h3 name="withValue">Attribute Selector with attribute with value ( = )</h3>
+    <h3 name="withValue">Attribute Selector with attribute with value ( = )</h3>
 
-        <a href="http://google.com">Google</a> <br>
+    <a href="http://google.com">Google</a> <br>
 
-        <!-- 🎯 Attribute Selector with starting value ( ^= ) -->
+    <!-- 🎯 Attribute Selector with starting value ( ^= ) -->
 
-        <a href="http://google.com">Google</a> <br> <br>
+    <a href="http://google.com">Google</a> <br> <br>
 
-        <!--🎯 Attribute Selector with ending value ( $= ) -->
+    <!--🎯 Attribute Selector with ending value ( $= ) -->
 
-        <a href="http://google.com" name="google">Google</a>
-        <a href="https://ibm.com" name="css">IBM</a>
-        <a href="https://ijse.lk">IJSE</a>
-        <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
-        <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
+    <a href="http://google.com" name="google">Google</a>
+    <a href="https://ibm.com" name="css">IBM</a>
+    <a href="https://ijse.lk">IJSE</a>
+    <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
+    <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
 
-        <!-- 🎯 Attribute Selector with given value snippet ( *= ) -->
-        <a href="http://google.com" name="google">Google</a>
-        <a href="https://ibm.com" name="css">IBM</a>
-        <a href="https://ijse.lk">IJSE</a>
-        <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
-        <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
+    <!-- 🎯 Attribute Selector with given value snippet ( *= ) -->
+    <a href="http://google.com" name="google">Google</a>
+    <a href="https://ibm.com" name="css">IBM</a>
+    <a href="https://ijse.lk">IJSE</a>
+    <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
+    <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
 
-        <!-- 🎯 Attribute Selector with given word ( ~= ) -->
-        <a href="http://google.com" name="google">Google</a>
-        <a href="https://ibm.com" name="css">IBM</a>
-        <a href="https://ijse.lk">IJSE</a>
-        <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
-        <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
+    <!-- 🎯 Attribute Selector with given word ( ~= ) -->
+    <a href="http://google.com" name="google">Google</a>
+    <a href="https://ibm.com" name="css">IBM</a>
+    <a href="https://ijse.lk">IJSE</a>
+    <a href="http://ijsehttpsstudents.lk">IJSE Students</a>
+    <a href="http://ijse students .lk">IJSE Students 2</a> <br> <br>
 
-        <!-- 🎯 Attribute Selector with Type Selector -->
-        <h3 name="google">Google Header</h3>
+    <!-- 🎯 Attribute Selector with Type Selector -->
+    <h3 name="google">Google Header</h3>
 
-        <!-- 🎯 Attribute Selector with Class Selector -->
-        <h3 class="mystyle" name="withClass">Attribute Selector with Class Selector</h3>
+    <!-- 🎯 Attribute Selector with Class Selector -->
+    <h3 class="mystyle" name="withClass">Attribute Selector with Class Selector</h3>
 
 <!--///////////// 6) Pseudo-Class Selector ///////////////////-->
+
+    <!-- 🔴 select specific status of an element -->
+
+    <!-- :hover -->
+    <h1>Hover</h1>
+
+    <!-- :active -->
+    <h1>Active</h1>
+
+    <!-- :visited -->
+    <a href="http://google.com" name="google">Google</a>
+
+    <!-- :link -->
+    <a href="http://yahoo.com" name="yahoo">Yahoo</a> <br> <br>
+
+    <!-- :focus -->
+    <label for="fname">First Name</label> <br>
+    <input type="text" name="fname" id="fname" placeholder="First Name">
+
+    <!-- :first-child / :last-child / :nth-child(n) / :nth-last-child(n) / :only-child -->
+    <ol>
+        <li name="google">HTML</li>
+        <li> CSS
+            <ol>
+                <li>Introduction to CSS</li>
+                <li>History of CSS</li>
+                <li>CSS Rule</li>
+                <li>CSS Selectors</li>
+                <li>Other CSS Topics...</li>
+            </ol>
+        </li>
+        <li>JS</li>
+    </ol>
+
+    <ol>
+        <li>Introduction to CSS</li>
+        <li>History of CSS</li>
+        <li>CSS Rule</li>
+        <li>CSS Selectors</li>
+        <li>Other CSS Topics...</li>
+    </ol>
+
+    <ol>
+        <li>Introduction to CSS</li>
+    </ol>
+
+<!--///////////// 7) Pseudo-Element Selector ///////////////////-->
+
+    <!-- ::before - add a content before the current content and style it -->
+    <h1>Before Pseudo</h1>
+
+    <!-- ::after - add a content after the current content and style it -->
+    <h1>After Pseudo</h1>
+
+    <!-- ::first-letter - add style to first letter -->
+    <h3>First Letter</h3>
+
+    <!-- ::first-line - add style to first line -->
+    <p>Lorem ipsum dolor sit <br>
+        amet, consectetur adipisicing elit. Commodi ipsum minima natus nemo repudiandae.</p>
+
+    <!-- ::placeholder - style placeholder -->
+    <label for="sname">Second Name</label> <br>
+    <input type="text" name="sname" id="sname" placeholder="Second Name">
+
+    <!-- ::file-selector-button - add style to file selector btn -->
+    <input type="file">
+
+    <!-- Pseudo-Element Selectors + Pseudo-Class Selectors -->
+    <input type="file">
+
+    <!-- ::selection - style web content selection (highlight and select) -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cum cumque, dicta doloremque dolorum</p>
+
+    <!-- ::marker - style markers in html lists (work with lists) -->
+    <ol>
+        <li>Hello</li>
+        <li>CSS</li>
+    </ol>
+
+<!--///////////// 8) Grouping Selector ///////////////////-->
+
+    <h1>Grouping</h1>
+    <h2 id="subtopic1">Selector</h2>
+    <h3 class="mystyle">h1,h2 and h4</h3>
 
 
 </body>
