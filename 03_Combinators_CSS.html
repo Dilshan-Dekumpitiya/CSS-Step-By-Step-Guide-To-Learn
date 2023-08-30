@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+
+    <style>
+
+        /*1) Child Combinator - check direct child ( > )*/
+        section>h4 {
+            color: red;
+        }
+
+        section>h4:first-child {
+            color: pink;
+        }
+
+        /*2) Decendent Combinator - select the child if exist anywhere inside the parent ( " " space )*/
+        /*section h4 {*/
+        /*    color: green;*/
+        /*}*/
+
+        /*section h4:first-child {*/
+        /*    color: gold;*/
+        /*}*/
+
+        /*3) Adjacent Combinator - select the element which is located first after given first element ( + )*/
+        /*h4 + div {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*4) General Siblings Combinator - select the element which is located after given first element ( ~ )*/
+        /*h4 ~ h2 {*/
+        /*    color: deepskyblue;*/
+        /*}*/
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <h4>Hello CSS</h4>
+    <div>
+        <h4>CSS Content</h4>
+        <div>Intro</div>
+        <div>Basics</div>
+    </div>
+    <div>
+        <div>JSX</div>
+    </div>
+    <h4>Hello JS</h4>
+    <h2>H2 Here</h2>
+</section>
+
+</body>
+</html>
