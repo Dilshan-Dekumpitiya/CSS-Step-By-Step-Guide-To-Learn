@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model CSS</title>
+
+    <style>
+
+        .card{
+            width: 300px;
+            background-color: lightyellow;
+
+            padding: 20px; /* All side */
+            /*padding-top: 20px;*/
+            /*padding-right: 20px;*/
+            /*padding-bottom: 20px;*/
+            /*padding-left: 20px;*/
+            /*padding: 10px 20px 20px 20px;*/
+
+            border: 1px solid gray;
+            /*border: 1px dashed gray;*/
+            /*border: 1px dotted gray;*/
+
+            /*border-top: 10px solid red;*/
+            /*border-right: 5px dotted blue;*/
+            /*border-bottom: 20px dashed green;*/
+            /*border-left: 20px dashed yellow;*/
+
+            border-radius: 10px;
+            /*border-top-left-radius: 10px;*/
+            /*border-top-right-radius: 100px;*/
+
+            margin: 50px; /* All side */
+            /*margin: 20px 20px 20px 100px;*/
+
+            /*box-shadow: 10px 10px 10px 20px lightgreen;*/
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        .card>h3 {
+            margin-top: 0px;
+        }
+
+        #card2 {
+            width: fit-content;
+            background-color: yellowgreen;
+
+            padding: 20px;
+            margin: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="card">
+    <h3>Assignment 01</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque eius eligendi, eos expedita ipsa libero, maxime, optio praesentium quia quis tempora? Commodi odio omnis quis repellendus sequi totam unde.
+    </p>
+
+    <button>Run</button>
+    <a href="http://github.com">GitHub Link</a>
+</div>
+
+
+<div id="card2">
+    hello
+</div>
+
+</body>
+</html>
