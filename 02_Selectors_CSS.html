@@ -7,10 +7,10 @@
     <style>
 
         /*--------------- 1) Type Selector---------------*/
-        h1 {
+        /*h1 {
             color: red;
             font-size: 24px;
-        }
+        }*/
 
         /*--------------- 2) Class Selector---------------*/
         /*.mystyle {
@@ -197,6 +197,12 @@
         /*    color: lightcoral;*/
         /*}*/
 
+        /*-- Can Select all types as one line(Can combine) --*/
+        h1.combine#selectAll{
+            color: red;
+        }
+
+
 
     </style>
 
@@ -352,6 +358,10 @@
     <h2 id="subtopic1">Selector</h2>
     <h3 class="mystyle">h1,h2 and h4</h3>
 
+<!--///////////// Can Select all types as one line(Can combine) ///////////////////-->
+
+    <h1 class="combine" id="selectAll">Combine 1</h1>
+    <h1 class="combine">Combine 2</h1>
 
 </body>
 </html>
