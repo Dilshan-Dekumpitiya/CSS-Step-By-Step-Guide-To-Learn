@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>10_Positions_CSS_06(Sticky Position)</title>
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+
+  <style>
+    section {
+      height: 700px;
+      border: 2px solid red;
+    }
+
+    body section:nth-child(1)>h1 {
+      color: green;
+      font-size: 100px;
+      position: sticky;
+      top: 0;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <section>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius magni repudiandae expedita corrupti aut nam in
+      maxime adipisci praesentium autem dolores laboriosam, veniam numquam, perferendis explicabo ab ipsa labore
+      provident!</p>
+  </section>
+
+  <section>
+    <h1>There</h1>
+  </section>
+
+  <section>
+    <h1>sticky</h1>
+  </section>
+
+</body>
+
+</html>
