@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Four Box in single Box with Basics</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+
+    <style>
+        body>section{
+           height: 300px;
+           border: 1px solid red; 
+           position: relative;
+        }
+        section>div{
+            border: 1px solid green;
+            position: absolute;
+            height: 100%;
+            width: 25%;
+        }
+        section>div:first-child{
+            left: 0;
+        }
+        section>div:nth-child(2){
+            left: 25%;
+        }
+        section>div:nth-child(3){
+            left: 50%;
+        }
+        section>div:nth-child(4){
+            left: 75%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Box with Basics</h1>
+    <section>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </section>
+</body>
+</html>
