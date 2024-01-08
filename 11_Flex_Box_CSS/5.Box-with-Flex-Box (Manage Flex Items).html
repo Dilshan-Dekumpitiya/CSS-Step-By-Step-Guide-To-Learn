@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Box with Flex Box (Manage Flex Items)</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <style>
+        body>section {
+            height: 300px;
+            border: 1px solid red;
+            display: flex;
+            /* flex-wrap: wrap; */
+            
+        }
+
+        section>div {
+            border: 1px solid green;
+            height: 100px;
+            width: 100px;
+            flex-grow: 1;
+            /* flex-shrink: 1; */
+            flex-basis: 200px;
+        }
+        section>div:nth-child(1){
+            /* flex-grow: 1; */
+            /* flex: 0 1 100px; */
+            order: 3;
+          
+        }
+        section>div:nth-child(2){
+            /* flex-grow: 2; */
+            order: 4;
+        }
+        section>div:nth-child(3){
+            /* flex-grow: 1; */
+            order: 1;
+        }
+        section>div:nth-child(4){
+            /* flex-g row: 1; */
+            order: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Box using Flex Box (Manage Flex Items)</h1>
+    <section>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </section>
+</body>
+
+</html>
