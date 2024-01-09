@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. CSS Grid Layout</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <style>
+        section{
+           width: 500px;
+           height: 500px;
+           border: 2px solid red ;
+           display: grid;
+
+           /* rows 5 */
+           /* grid-template-rows: 100px 100px 100px 100px 100px; */
+           /* grid-template-rows: repeat(5,100px); */
+           grid-template-rows: repeat(5,1fr);
+
+           /* columns 2 */
+           /* grid-template-columns: 250px 250px; */
+           /* grid-template-columns: repeat(2,250px); */
+           grid-template-columns: repeat(2,1fr);
+
+           grid-gap: 10px 1px;
+        }
+        section>div{
+            border: 1px solid green; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+
+</html>
