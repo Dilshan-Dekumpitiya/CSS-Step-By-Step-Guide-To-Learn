@@ -1,0 +1,121 @@
+/* header elements style start*/
+header {
+    height: 50px;
+    position: relative;
+    box-shadow: 10px 1px 10px 1px #917a7a;
+}
+
+header>ul {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header>ul>li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    color: #60636e;
+}
+
+header>ul>li:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+header>img {
+    margin: 0 0 0 15px;
+}
+
+/* header elements style end*/
+
+/* main elements style start*/
+main>nav {
+    position: absolute;
+    width: 150px;
+    top: 0;
+    bottom: 0;
+    background-color: purple;
+    color: white;
+    min-height: 100vh;
+}
+
+main>nav>ul {
+    list-style: none;
+    font-size: 16px;
+    margin-top: 39px;
+}
+
+main>nav>ul>li {
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body>main {
+    position: relative;
+}
+
+body>main>section {
+    margin: 0 0 0 160px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+main>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 4px;
+    margin: 0 0 0 10px;
+}
+
+main>nav>ul>li>a:hover {
+    color: orange;
+}
+
+/* main section content started */
+main>section>section {
+    height: 300px;
+    position: relative;
+}
+
+main>section>section>div {
+    position: absolute;
+    height: 100%;
+    width: calc(100%/3);
+
+}
+
+main>section>section>div:nth-child(1) {
+    left: 0;
+    background: url("../img/giphy.gif");
+    background-size: cover;
+}
+
+main>section>section>div:nth-child(2) {
+    border-left: 6px solid white;
+    left: calc(100%/3);
+    background: url("../img/giphy.gif");
+    background-size: cover;
+}
+
+main>section>section>div:nth-child(3) {
+    border-left: 6px solid white;
+    left: calc((100%/3)*2);
+    background: url("../img/giphy.gif");
+    background-size: cover;
+}
+
+/* main elements style end*/
+
+/* footer content start */
+footer {
+    text-align: center;
+    border: 2px solid #60636e;
+    color: white;
+    background-color: #60636e;
+    font-weight: bold;
+}
+
+/* footer content end  */
