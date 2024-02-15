@@ -78,31 +78,25 @@ main>nav>ul>li>a:hover {
 main>section>section {
     height: 300px;
     position: relative;
+    display: flex;
 }
 
 main>section>section>div {
-    position: absolute;
-    height: 100%;
-    width: calc(100%/3);
+    flex-grow: 1;
 
 }
 
 main>section>section>div:nth-child(1) {
-    left: 0;
     background: url("../img/giphy.gif");
     background-size: cover;
 }
 
 main>section>section>div:nth-child(2) {
-    border-left: 6px solid white;
-    left: calc(100%/3);
     background: url("../img/giphy.gif");
     background-size: cover;
 }
 
 main>section>section>div:nth-child(3) {
-    border-left: 6px solid white;
-    left: calc((100%/3)*2);
     background: url("../img/giphy.gif");
     background-size: cover;
 }
@@ -119,3 +113,64 @@ footer {
 }
 
 /* footer content end  */
+
+/* media queries */
+/* for mobile */
+@media all and (max-width:475px) {
+    header>img {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 40px;
+        bottom: 18px;
+    }
+    header>ul{
+       font-size: 18px;
+       left: 0;
+       right: 0;
+       bottom: 10px;
+       margin: auto;
+       padding-left: 0;
+       width: max-content;
+
+    }
+    header{
+        height: 80px;
+    }
+    main>nav{
+        display: none;
+    }
+    body>main>section{
+        margin: 0 0 0 0;
+    }
+    main>section>section{
+        flex-direction: column;
+        height: 900px;
+    }
+    
+}
+
+/* for tablets */
+@media all and (min-width:425px) and (max-width:768px) {
+    
+}
+
+
+/* for laptop */
+@media all and (min-width:768px) and (max-width:1024px) {
+   
+}
+
+
+/* for laptop large */
+@media all and (min-width:1024px) and (max-width:1440px) {
+    
+}
+
+/* for 4K */
+@media all and (min-width:1440px) and (max-width:2560px) {
+   
+}
