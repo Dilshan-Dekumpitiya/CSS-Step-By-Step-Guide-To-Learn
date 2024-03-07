@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>15_Animations_CSS-1</title>
+    <title>15_Animations_CSS-2</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
 
     <style>
@@ -13,17 +13,27 @@
             background-color: red;
 
             /* Add animation */
-            animation-name: TestOne;
-            animation-duration: 1s;
+            animation-name: changeColors;
+            animation-duration: 30s;
             animation-iteration-count: infinite;
         }
 
-        @keyframes TestOne{
-            from{
+        /* Using 0 to 100 percentage */
+        @keyframes changeColors{
+            0%,20%{
                 background-color: green;
             }
-            to{
-                background-color: orange;
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: brown;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                background-color: black;
             }
         }
 

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_Animations_CSS-1</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+
+    <style>
+
+        section{
+            width: 200px;
+            height: 150px;
+            background-color: red;
+
+            /* Add animation */
+            animation-name: TestOne;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Using basic from to keyframe */
+        @keyframes TestOne{
+            from{
+                background-color: green;
+            }
+            to{
+                background-color: orange;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section></section>
+    
+</body>
+</html>
