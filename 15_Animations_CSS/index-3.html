@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation 3</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+
+    <style>
+        section{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+
+            /* Add animation */
+            animation-name: test; /* Give keyframe name to this */
+            animation-duration: 10s; /* All frame run time (1..9 | infinite) */
+            animation-iteration-count: 2; /* Animation count */
+            animation-direction: normal; /* Animation direction - Start end frame (reverse | alternate | alternate-reverse) */
+            /* alternate - from to / to from */
+            
+            /* Last frame hold after ending the round*/
+            animation-fill-mode: backwards; /* none | forwards | backwards | both */
+            /* forwards - Last frame hold after ending the round */
+            /* backwards - Can apply first frame before run animation */
+            /* both - Hold last frame of ending */ 
+        
+            animation-delay: 5s; /* Give delay to before start */
+        }
+
+        @keyframes test{
+            from{
+                left: 0;
+                background-color: blue;
+            }
+            to{
+                left: 500px;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+    </section>
+</body>
+</html>
